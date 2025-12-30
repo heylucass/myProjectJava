@@ -1,17 +1,14 @@
-package main;
+package main.models;
 
-public class Person {
+public abstract class Person {
 	private String name;
 	private Integer age;
 	private String address;
 	private String email;
-	private String[] preferences;
 	private Boolean isOnline; 
 	
 	// Metodo Construtor
-	public Person(String name, Integer age, String address, String email) {
-		this.address = address;
-		this.age = age;
+	public Person(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}
